@@ -1,0 +1,9 @@
+# Maximum number of Online Forceload blocks owned by one player.
+online_forceload.max_blocks_per_player (Forceload blocks per player) int 5 0 100
+
+# Public URL containing the exact source of the installed mod. This is shown by
+# /online_forceload_source and should be set on every publicly accessible server.
+online_forceload.source_url (Source code URL) string
+
+# Number of seconds the mapblock boundary is visible after punching a loader.
+online_forceload.display_seconds (Mapblock display duration) float 5 1 30

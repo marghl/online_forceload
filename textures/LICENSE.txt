@@ -1,0 +1,11 @@
+online_forceload_block.png
+  Generated for Online Forceload with OpenAI ImageGen.
+  Dedicated to the public domain under CC0 1.0.
+  https://creativecommons.org/publicdomain/zero/1.0/
+
+online_forceload_display.png
+  Copyright TenPlus1.
+  Unchanged copy of protector_display.png from Protector Redo.
+  Licensed under Creative Commons Attribution-ShareAlike 3.0 Unported.
+  https://creativecommons.org/licenses/by-sa/3.0/
+  Source: https://notabug.org/TenPlus1/protector

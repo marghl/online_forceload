@@ -1,0 +1,23 @@
+# textdomain: online_forceload
+Online Forceload Block=Online-Forceload-Block
+Keeps this mapblock active while its owner is online.=Hält diesen Mapblock aktiv, solange der Besitzer online ist.
+Owner: @1=Besitzer: @1
+Mapblock @1 to @2=Mapblock @1 bis @2
+Active while @1 is online.=Aktiv, solange @1 online ist.
+Inactive: owner is offline.=Inaktiv: Besitzer ist offline.
+Your forceload quota is disabled.=Dein Forceload-Kontingent ist deaktiviert.
+Your forceload quota of @1 has been reached.=Dein Forceload-Kontingent von @1 ist erreicht.
+This mapblock already has a forceload block.=Dieser Mapblock besitzt bereits einen Forceload-Block.
+The engine forceload limit has been reached.=Das Forceload-Limit der Engine ist erreicht.
+Forceload block activated (@1/@2).=Forceload-Block aktiviert (@1/@2).
+Forceload block removed.=Forceload-Block entfernt.
+You may only dig your own forceload block.=Du darfst nur deinen eigenen Forceload-Block abbauen.
+List your Online Forceload blocks=Eigene Online-Forceload-Blöcke auflisten
+You own no forceload blocks.=Du besitzt keine Forceload-Blöcke.
+active=aktiv
+inactive=inaktiv
+Source and license information for Online Forceload=Quellcode- und Lizenzinformationen für Online Forceload
+Source: @1=Quellcode: @1
+No source URL is configured. The server operator must set online_forceload.source_url.=Keine Quellcode-URL ist konfiguriert. Der Serverbetreiber muss online_forceload.source_url setzen.
+Licensed under GNU AGPL v3 or later. Based on Techage by Joachim Stolberg and contributors.=Lizenziert unter GNU AGPL v3 oder neuer. Basierend auf Techage von Joachim Stolberg und Mitwirkenden.
+Source code information: /online_forceload_source=Informationen zum Quellcode: /online_forceload_source
