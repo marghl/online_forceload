@@ -1,6 +1,14 @@
 # Maximum number of Online Forceload blocks owned by one player.
 online_forceload.max_blocks_per_player (Forceload blocks per player) int 5 0 100
 
+# Maximum blocks one player may register in the same mapblock. Set to 0 to use
+# only the general per-player quota and allow multiple blocks in a mapblock.
+online_forceload.max_blocks_per_player_per_mapblock (Forceload blocks per player and mapblock) int 0 0 100
+
+# Maximum number of registered blocks, including blocks owned by offline players.
+# Existing blocks above the limit are retained; only new placements are rejected.
+online_forceload.max_registered_blocks (Registered forceload block limit) int 500 0 100000
+
 # Public URL containing the exact source of the installed mod. This is shown by
 # /online_forceload_source and should be set on every publicly accessible server.
 online_forceload.source_url (Source code URL) string
