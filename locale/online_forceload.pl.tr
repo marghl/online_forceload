@@ -1,0 +1,34 @@
+# textdomain: online_forceload
+# Tłumaczenie wygenerowane przez SI
+Online Forceload Block=Blok wymuszonego ładowania online
+Keeps this mapblock active while its owner is online.=Utrzymuje ten blok mapy aktywny, gdy jego właściciel jest online.
+Owner: @1=Właściciel: @1
+Mapblock @1 to @2=Blok mapy od @1 do @2
+Active while @1 is online.=Aktywny, gdy @1 jest online.
+Inactive: owner is offline.=Nieaktywny: właściciel jest offline.
+Your forceload quota is disabled.=Twój limit wymuszonego ładowania jest wyłączony.
+Your forceload quota of @1 has been reached.=Osiągnięto twój limit wymuszonego ładowania: @1.
+The engine forceload limit has been reached.=Osiągnięto limit wymuszonego ładowania silnika.
+Forceload block activated (@1/@2).=Blok wymuszonego ładowania aktywowany (@1/@2).
+Forceload block removed.=Blok wymuszonego ładowania usunięty.
+You may only dig your own forceload block.=Możesz usunąć tylko własny blok wymuszonego ładowania.
+List your Online Forceload blocks=Wyświetl swoje bloki wymuszonego ładowania online
+You own no forceload blocks.=Nie posiadasz bloków wymuszonego ładowania.
+active=aktywny
+inactive=nieaktywny
+Source and license information for Online Forceload=Informacje o kodzie źródłowym i licencji Online Forceload
+Source: @1=Źródło: @1
+No source URL is configured. The server operator must set online_forceload.source_url.=Nie skonfigurowano adresu URL kodu źródłowego. Operator serwera musi ustawić online_forceload.source_url.
+Licensed under GNU AGPL v3 or later. Based on Techage by Joachim Stolberg and contributors.=Licencja GNU AGPL v3 lub nowsza. Na podstawie Techage autorstwa Joachima Stolberga i współtwórców.
+Can place and operate Online Forceload blocks=Może umieszczać i obsługiwać bloki wymuszonego ładowania online
+Active through another online owner.=Aktywny dzięki innemu właścicielowi, który jest online.
+Inactive: owner lacks the forceloader privilege.=Nieaktywny: właściciel nie ma uprawnienia forceloader.
+You need the forceloader privilege to place this block.=Aby umieścić ten blok, potrzebujesz uprawnienia forceloader.
+The global registry limit of @1 forceload blocks has been reached.=Osiągnięto globalny limit @1 zarejestrowanych bloków wymuszonego ładowania.
+Your per-mapblock quota of @1 forceload blocks has been reached.=Osiągnięto limit @1 bloków wymuszonego ładowania na blok mapy.
+Manage Online Forceload blocks=Zarządzaj blokami wymuszonego ładowania online
+Registered loaders: @1/@2; active mapblocks: @3=Zarejestrowane bloki: @1/@2; aktywne bloki mapy: @3
+No matching forceload blocks.=Nie znaleziono pasujących bloków wymuszonego ładowania.
+Removed loader at @1 owned by @2.=Usunięto blok w @1 należący do @2.
+No registered loader at @1.=Brak zarejestrowanego bloku w @1.
+Usage: /online_forceload_admin <stats | list [player] | remove (x,y,z)>=Użycie: /online_forceload_admin <stats | list [gracz] | remove (x,y,z)>

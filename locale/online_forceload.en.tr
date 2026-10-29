@@ -1,0 +1,34 @@
+# textdomain: online_forceload
+# AI-generated translation
+Online Forceload Block=Online Forceload Block
+Keeps this mapblock active while its owner is online.=Keeps this mapblock active while its owner is online.
+Owner: @1=Owner: @1
+Mapblock @1 to @2=Mapblock @1 to @2
+Active while @1 is online.=Active while @1 is online.
+Inactive: owner is offline.=Inactive: owner is offline.
+Your forceload quota is disabled.=Your forceload quota is disabled.
+Your forceload quota of @1 has been reached.=Your forceload quota of @1 has been reached.
+The engine forceload limit has been reached.=The engine forceload limit has been reached.
+Forceload block activated (@1/@2).=Forceload block activated (@1/@2).
+Forceload block removed.=Forceload block removed.
+You may only dig your own forceload block.=You may only dig your own forceload block.
+List your Online Forceload blocks=List your Online Forceload blocks
+You own no forceload blocks.=You own no forceload blocks.
+active=active
+inactive=inactive
+Source and license information for Online Forceload=Source and license information for Online Forceload
+Source: @1=Source: @1
+No source URL is configured. The server operator must set online_forceload.source_url.=No source URL is configured. The server operator must set online_forceload.source_url.
+Licensed under GNU AGPL v3 or later. Based on Techage by Joachim Stolberg and contributors.=Licensed under GNU AGPL v3 or later. Based on Techage by Joachim Stolberg and contributors.
+Can place and operate Online Forceload blocks=Can place and operate Online Forceload blocks
+Active through another online owner.=Active through another online owner.
+Inactive: owner lacks the forceloader privilege.=Inactive: owner lacks the forceloader privilege.
+You need the forceloader privilege to place this block.=You need the forceloader privilege to place this block.
+The global registry limit of @1 forceload blocks has been reached.=The global registry limit of @1 forceload blocks has been reached.
+Your per-mapblock quota of @1 forceload blocks has been reached.=Your per-mapblock quota of @1 forceload blocks has been reached.
+Manage Online Forceload blocks=Manage Online Forceload blocks
+Registered loaders: @1/@2; active mapblocks: @3=Registered loaders: @1/@2; active mapblocks: @3
+No matching forceload blocks.=No matching forceload blocks.
+Removed loader at @1 owned by @2.=Removed loader at @1 owned by @2.
+No registered loader at @1.=No registered loader at @1.
+Usage: /online_forceload_admin <stats | list [player] | remove (x,y,z)>=Usage: /online_forceload_admin <stats | list [player] | remove (x,y,z)>

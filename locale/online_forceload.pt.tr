@@ -1,0 +1,34 @@
+# textdomain: online_forceload
+# Tradução gerada por IA
+Online Forceload Block=Bloco de carregamento forçado online
+Keeps this mapblock active while its owner is online.=Mantém este bloco do mapa ativo enquanto o proprietário estiver online.
+Owner: @1=Proprietário: @1
+Mapblock @1 to @2=Bloco do mapa de @1 a @2
+Active while @1 is online.=Ativo enquanto @1 estiver online.
+Inactive: owner is offline.=Inativo: o proprietário está offline.
+Your forceload quota is disabled.=A tua quota de carregamento forçado está desativada.
+Your forceload quota of @1 has been reached.=A tua quota de carregamento forçado de @1 foi atingida.
+The engine forceload limit has been reached.=O limite de carregamento forçado do motor foi atingido.
+Forceload block activated (@1/@2).=Bloco de carregamento forçado ativado (@1/@2).
+Forceload block removed.=Bloco de carregamento forçado removido.
+You may only dig your own forceload block.=Só podes remover o teu próprio bloco de carregamento forçado.
+List your Online Forceload blocks=Listar os teus blocos de carregamento forçado online
+You own no forceload blocks.=Não possuis blocos de carregamento forçado.
+active=ativo
+inactive=inativo
+Source and license information for Online Forceload=Informações sobre o código-fonte e a licença do Online Forceload
+Source: @1=Fonte: @1
+No source URL is configured. The server operator must set online_forceload.source_url.=Não está configurado nenhum URL do código-fonte. O operador do servidor deve definir online_forceload.source_url.
+Licensed under GNU AGPL v3 or later. Based on Techage by Joachim Stolberg and contributors.=Licenciado sob a GNU AGPL v3 ou posterior. Baseado no Techage de Joachim Stolberg e colaboradores.
+Can place and operate Online Forceload blocks=Pode colocar e operar blocos de carregamento forçado online
+Active through another online owner.=Ativo através de outro proprietário online.
+Inactive: owner lacks the forceloader privilege.=Inativo: o proprietário não tem o privilégio forceloader.
+You need the forceloader privilege to place this block.=Precisas do privilégio forceloader para colocar este bloco.
+The global registry limit of @1 forceload blocks has been reached.=Foi atingido o limite global de @1 blocos de carregamento forçado registados.
+Your per-mapblock quota of @1 forceload blocks has been reached.=A tua quota de @1 blocos de carregamento forçado por bloco do mapa foi atingida.
+Manage Online Forceload blocks=Gerir blocos de carregamento forçado online
+Registered loaders: @1/@2; active mapblocks: @3=Blocos registados: @1/@2; blocos do mapa ativos: @3
+No matching forceload blocks.=Não foram encontrados blocos de carregamento forçado correspondentes.
+Removed loader at @1 owned by @2.=Bloco em @1 pertencente a @2 removido.
+No registered loader at @1.=Não existe nenhum bloco registado em @1.
+Usage: /online_forceload_admin <stats | list [player] | remove (x,y,z)>=Utilização: /online_forceload_admin <stats | list [jogador] | remove (x,y,z)>

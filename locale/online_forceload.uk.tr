@@ -1,0 +1,34 @@
+# textdomain: online_forceload
+# Переклад створено ШІ
+Online Forceload Block=Блок примусового завантаження онлайн
+Keeps this mapblock active while its owner is online.=Зберігає цей блок мапи активним, поки його власник у мережі.
+Owner: @1=Власник: @1
+Mapblock @1 to @2=Блок мапи від @1 до @2
+Active while @1 is online.=Активний, поки @1 у мережі.
+Inactive: owner is offline.=Неактивний: власник не в мережі.
+Your forceload quota is disabled.=Вашу квоту примусового завантаження вимкнено.
+Your forceload quota of @1 has been reached.=Вашу квоту примусового завантаження @1 вичерпано.
+The engine forceload limit has been reached.=Досягнуто межі примусового завантаження рушія.
+Forceload block activated (@1/@2).=Блок примусового завантаження активовано (@1/@2).
+Forceload block removed.=Блок примусового завантаження видалено.
+You may only dig your own forceload block.=Ви можете видалити лише власний блок примусового завантаження.
+List your Online Forceload blocks=Показати ваші блоки примусового завантаження онлайн
+You own no forceload blocks.=У вас немає блоків примусового завантаження.
+active=активний
+inactive=неактивний
+Source and license information for Online Forceload=Інформація про вихідний код і ліцензію Online Forceload
+Source: @1=Джерело: @1
+No source URL is configured. The server operator must set online_forceload.source_url.=URL вихідного коду не налаштовано. Оператор сервера повинен задати online_forceload.source_url.
+Licensed under GNU AGPL v3 or later. Based on Techage by Joachim Stolberg and contributors.=Ліцензовано за GNU AGPL v3 або новішою. Засновано на Techage Йоахіма Штольберга та учасників проєкту.
+Can place and operate Online Forceload blocks=Може розміщувати й використовувати блоки примусового завантаження онлайн
+Active through another online owner.=Активний завдяки іншому власнику в мережі.
+Inactive: owner lacks the forceloader privilege.=Неактивний: власник не має привілею forceloader.
+You need the forceloader privilege to place this block.=Для розміщення цього блока потрібен привілей forceloader.
+The global registry limit of @1 forceload blocks has been reached.=Досягнуто глобальної межі в @1 зареєстрованих блоків примусового завантаження.
+Your per-mapblock quota of @1 forceload blocks has been reached.=Досягнуто вашої квоти в @1 блоків примусового завантаження на блок мапи.
+Manage Online Forceload blocks=Керування блоками примусового завантаження онлайн
+Registered loaders: @1/@2; active mapblocks: @3=Зареєстровані блоки: @1/@2; активні блоки мапи: @3
+No matching forceload blocks.=Відповідних блоків примусового завантаження не знайдено.
+Removed loader at @1 owned by @2.=Блок у @1, що належав @2, видалено.
+No registered loader at @1.=У @1 немає зареєстрованого блока.
+Usage: /online_forceload_admin <stats | list [player] | remove (x,y,z)>=Використання: /online_forceload_admin <stats | list [гравець] | remove (x,y,z)>

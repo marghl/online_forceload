@@ -1,0 +1,34 @@
+# textdomain: online_forceload
+# Překlad vytvořený umělou inteligencí (AI)
+Online Forceload Block=Blok načítání online
+Keeps this mapblock active while its owner is online.=Udržuje tento mapový blok aktivní, dokud je jeho vlastník online.
+Owner: @1=Vlastník: @1
+Mapblock @1 to @2=Mapový blok @1 až @2
+Active while @1 is online.=Aktivní, dokud je @1 online.
+Inactive: owner is offline.=Neaktivní: vlastník je offline.
+Your forceload quota is disabled.=Vaše kvóta nuceného načítání je zakázána.
+Your forceload quota of @1 has been reached.=Vaše kvóta nuceného načítání @1 byla vyčerpána.
+The engine forceload limit has been reached.=Byl dosažen limit nuceného načítání enginu.
+Forceload block activated (@1/@2).=Blok nuceného načítání aktivován (@1/@2).
+Forceload block removed.=Blok nuceného načítání odstraněn.
+You may only dig your own forceload block.=Můžete odstranit pouze svůj vlastní blok nuceného načítání.
+List your Online Forceload blocks=Vypsat vaše bloky načítání online
+You own no forceload blocks.=Nevlastníte žádné bloky nuceného načítání.
+active=aktivní
+inactive=neaktivní
+Source and license information for Online Forceload=Informace o zdrojovém kódu a licenci Online Forceload
+Source: @1=Zdroj: @1
+No source URL is configured. The server operator must set online_forceload.source_url.=Není nastavena adresa URL zdrojového kódu. Provozovatel serveru musí nastavit online_forceload.source_url.
+Licensed under GNU AGPL v3 or later. Based on Techage by Joachim Stolberg and contributors.=Licencováno pod GNU AGPL v3 nebo novější. Založeno na Techage od Joachima Stolberga a přispěvatelů.
+Can place and operate Online Forceload blocks=Může umisťovat a provozovat bloky načítání online
+Active through another online owner.=Aktivní díky jinému vlastníkovi, který je online.
+Inactive: owner lacks the forceloader privilege.=Neaktivní: vlastník nemá oprávnění forceloader.
+You need the forceloader privilege to place this block.=K umístění tohoto bloku potřebujete oprávnění forceloader.
+The global registry limit of @1 forceload blocks has been reached.=Byl dosažen globální limit registru @1 bloků nuceného načítání.
+Your per-mapblock quota of @1 forceload blocks has been reached.=Vaše kvóta @1 bloků nuceného načítání na mapový blok byla vyčerpána.
+Manage Online Forceload blocks=Spravovat bloky načítání online
+Registered loaders: @1/@2; active mapblocks: @3=Registrované bloky: @1/@2; aktivní mapové bloky: @3
+No matching forceload blocks.=Nebyly nalezeny žádné odpovídající bloky nuceného načítání.
+Removed loader at @1 owned by @2.=Blok na pozici @1 vlastníka @2 byl odstraněn.
+No registered loader at @1.=Na pozici @1 není registrován žádný blok.
+Usage: /online_forceload_admin <stats | list [player] | remove (x,y,z)>=Použití: /online_forceload_admin <stats | list [hráč] | remove (x,y,z)>
