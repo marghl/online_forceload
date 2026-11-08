@@ -6,6 +6,9 @@ Each player has a configurable quota. Multiple loaders belonging to the same
 or different owners may share a mapblock. The engine receives only one
 forceload request per active mapblock.
 
+Join and leave callbacks update the state immediately. As a safety net, the mod
+also reconciles registered mapblocks with connected players every 30 seconds.
+
 ## Configuration
 
 Add settings to `minetest.conf`, for example:

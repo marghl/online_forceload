@@ -39,7 +39,9 @@ local metadata = {}
 local players = {}
 local chats = {}
 local after_queue = {}
-local callbacks = {join = {}, leave = {}, shutdown = {}, grant = {}, revoke = {}}
+local callbacks = {
+	join = {}, leave = {}, shutdown = {}, grant = {}, revoke = {}, globalstep = {},
+}
 local registered_nodes = {}
 local chatcommands = {}
 local forceload_calls = 0
@@ -93,6 +95,9 @@ function minetest.register_on_leaveplayer(cb) callbacks.leave[#callbacks.leave +
 function minetest.register_on_shutdown(cb) callbacks.shutdown[#callbacks.shutdown + 1] = cb end
 function minetest.register_on_priv_grant(cb) callbacks.grant[#callbacks.grant + 1] = cb end
 function minetest.register_on_priv_revoke(cb) callbacks.revoke[#callbacks.revoke + 1] = cb end
+function minetest.register_globalstep(cb)
+	callbacks.globalstep[#callbacks.globalstep + 1] = cb
+end
 function minetest.after(_, cb, ...)
 	after_queue[#after_queue + 1] = {cb = cb, args = {...}}
 end
@@ -225,7 +230,14 @@ for _, cb in ipairs(callbacks.grant) do cb("charlie", "admin", "forceloader") en
 run_after()
 assert_equal(forceload_calls, 4, "privilege grant re-enabled existing loader")
 
+-- A missed leave callback must not retain an engine forceload indefinitely.
+players.charlie = nil
+for _, cb in ipairs(callbacks.globalstep) do cb(29) end
+assert_equal(free_calls, 3, "periodic audit waits for its interval")
+for _, cb in ipairs(callbacks.globalstep) do cb(1) end
+assert_equal(free_calls, 4, "periodic audit frees loader after missed leave callback")
+
 local ok, stats = chatcommands.online_forceload_admin.func("admin", "stats")
 assert(ok and stats:find("5/5", 1, true), "admin stats report registry usage")
 
-print("Runtime validation passed: migration, privileges, shared activation, limits, movement.")
+print("Runtime validation passed: migration, privileges, shared activation, limits, movement, audit.")

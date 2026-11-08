@@ -10,6 +10,7 @@
 local MODNAME = minetest.get_current_modname()
 local S = minetest.get_translator(MODNAME)
 local storage = minetest.get_mod_storage()
+local PLAYER_STATUS_AUDIT_INTERVAL = 30
 local node_name = MODNAME .. ":forceload"
 local storage_prefix = "block:"
 local quota = math.max(0, tonumber(minetest.settings:get(
@@ -225,7 +226,7 @@ local function refresh_infotexts(block)
 	end
 end
 
-local function reconcile_block(block)
+local function block_wanted(block)
 	local wanted = false
 	for _, entry in pairs(block.loaders) do
 		if player_eligible(entry.owner) then
@@ -233,6 +234,11 @@ local function reconcile_block(block)
 			break
 		end
 	end
+	return wanted
+end
+
+local function reconcile_block(block)
+	local wanted = block_wanted(block)
 
 	if wanted and not block.active then
 		if minetest.forceload_block(block.pos, true) then
@@ -634,6 +640,29 @@ minetest.register_lbm({
 minetest.register_on_leaveplayer(function(player)
 	-- The leaving PlayerRef can still be discoverable during this callback.
 	minetest.after(0, reconcile_owner, player:get_player_name())
+end)
+
+-- Join/leave callbacks normally update loaders immediately. This bounded audit
+-- is a safety net for an engine or mod interaction that leaves a PlayerRef
+-- discoverable during the deferred leave check. It only examines registered
+-- mapblocks and avoids metadata writes while their state is already correct.
+local player_status_audit_timer = 0
+minetest.register_globalstep(function(dtime)
+	player_status_audit_timer = player_status_audit_timer + dtime
+	if player_status_audit_timer < PLAYER_STATUS_AUDIT_INTERVAL then
+		return
+	end
+	player_status_audit_timer = player_status_audit_timer % PLAYER_STATUS_AUDIT_INTERVAL
+
+	for _, block in pairs(blocks) do
+		local wanted = block_wanted(block)
+		if wanted ~= block.active then
+			minetest.log("action", "[online_forceload] 30-second audit " ..
+				(wanted and "activating " or "releasing ") ..
+				minetest.pos_to_string(block.pos))
+			reconcile_block(block)
+		end
+	end
 end)
 
 if minetest.register_on_priv_grant then
